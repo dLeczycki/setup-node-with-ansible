@@ -1,5 +1,7 @@
-[backend]
-managed-1.lab.pl
+[app-server]
+#managed-1.lab.pl
+control.lab.pl
 
-[backend-db-server]
-managed-1.lab.pl
+[db-server]
+#managed-1.lab.pl
+control.lab.pl

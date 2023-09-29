@@ -1,12 +1,12 @@
 ---
 - name: Setup Database Server
-  hosts: backend-db-server
+  hosts: db-server
   tasks:
     - name: Setup PostgreSQL database
       import_tasks: ./tasks/setup_postgresql_database.yml
 
 - name: Setup BackEnd RedHat server
-  hosts: backend
+  hosts: app-server
   vars_files:
     - vars/config.yml
   tasks:

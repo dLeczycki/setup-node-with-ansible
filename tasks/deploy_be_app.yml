@@ -1,0 +1,15 @@
+- name: Pull app repo
+  ansible.builtin.debug:
+    msg: Pull project from gitlab
+
+- name: Build application
+  ansible.builtin.debug:
+    msg: Build application
+
+- name: Leave only dist folder
+  ansible.builtin.debug:
+    msg: Leave dist folder
+
+- name: Create config.ts file based on template
+  ansible.builtin.debug:
+    msg: Create config.ts file based on template

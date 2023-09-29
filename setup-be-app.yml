@@ -1,0 +1,20 @@
+---
+- name: Setup Database Server
+  hosts: backend-db-server
+  tasks:
+    - name: Setup PostgreSQL database
+      import_tasks: ./tasks/setup_postgresql_database.yml
+
+- name: Setup BackEnd RedHat server
+  hosts: backend
+  vars_files:
+    - vars/config.yml
+  tasks:
+    - name: Install nodejs
+      import_tasks: ./tasks/setup_nodejs.yml
+
+    - name: Deploy Backend application
+      import_tasks: ./tasks/deploy_be_app.yml
+
+    - name: Setup PM2
+      import_tasks: ./tasks/setup_pm2.yml

@@ -1,0 +1,11 @@
+---
+- name: Debug connection
+  hosts: backend
+  tasks:
+    - name: Debug connection
+      ansible.builtin.debug:
+        msg: Connection is working
+
+    - name: Debug ansible_facts
+      ansible.builtin.debug:
+        var: "{{ ansible_facts }}"

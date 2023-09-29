@@ -1,0 +1,3 @@
+- name: Install PostgreSQL on server
+  ansible.builtin.debug:
+    msg: Install PostgreSQL on {{ ansible_facts.hostname }}

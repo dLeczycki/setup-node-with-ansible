@@ -1,0 +1,5 @@
+[backend]
+managed-1.lab.pl
+
+[backend-db-server]
+managed-1.lab.pl

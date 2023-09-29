@@ -1,0 +1,7 @@
+- name: Check if pm2 is installed
+  ansible.builtin.debug:
+    msg: Check if pm2 is installed
+
+- name: Run PM2 process for application
+  ansible.builtin.debug:
+    msg: Run PM2 process for application
